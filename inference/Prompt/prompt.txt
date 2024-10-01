@@ -1,0 +1,42 @@
+Consider the following list of concepts, called "slots," provided to you as a JSON list.
+
+"slot": {
+   "cumulative_score": "the cumulative score of the game",
+   "home_goal": "the name of the home team player who scored a goal",
+   "home_shots_on_Target": "the name of the home team player with a shot on target",
+   "home_yellow_card": "the name of the home team player who received a yellow card",
+   "home_red_card": "the name of the home team player who received a red card",
+   "home_assist": "the name of the home team player who made an assist",
+   "home_sub_in": "the name of the home team player who was brought into play by substitution",
+   "home_sub_out": "the name of the home team player who was taken out of play by substitution",
+   "away_goal": "the name of the away team player who scored a goal",
+   "away_shots_on_Target": "the name of the away team player with a shot on target",
+   "away_yellow_card": "the name of the away team player who received a yellow card",
+   "away_red_card": "the name of the away team player who received a red card",
+   "away_assist": "the name of the away team player who made an assist",
+   "away_sub_in": "the name of the away team player who was brought into play by substitution",
+   "away_sub_out": "the name of the away team player who was taken out of play by substitution"
+}
+
+You can only answer in this form without changing any keys or missing any key.
+
+All values of "slot" (except cumulative_score) can be a value from a predefined list: "categorical": {home_team_player_name: a value in home team player list, away_team_player_name: a value in away team player list, cumulative_score: a dictionary with 2 keys, which are 'home' and 'away'. }
+
+For example, if a home team player 'A' receives a yellow card, the value of 'home_yellow_card' will be 'A'.
+
+Now, consider the following dialogue between two parties called the "caster" and "commentator." Can you tell me which of the "slots" correspond to the dialogue? Present the "slots" in JSON format. If a slot has no value, please fill the value as None. 
+Always present 'cumulative_score'. The initial value of 'cumulative_score' is {'home': 0, 'away': 0}.
+
+Additional information :
+home team name : {home_team_name}
+away team name : {away_team_name}
+home team player list : {home_team_players}
+away team player list : {away_team_players}
+home_team_score : Starts at 0, and increments by 1 when {home_team_name} player scores a goal
+away_team_score : Starts at 0, and increments by 1 when {away_team_name} player scores a goal
+
+Note:
+A home_team_player_name cannot be the value of an away_team_player_name, and vice versa.
+When a home_team_player_name scores a goal, increment the home_team_score, and vice versa.
+The order of 'cumulative_score' matters and should be considered.
+
