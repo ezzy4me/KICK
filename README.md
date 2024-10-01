@@ -1,7 +1,5 @@
 # KICK
-KICK: Korean Football In-game Conversation State Tracking Dataset for Dialogue and Turn Level Evaluation 
-
-This README document describes the baseline code for training and evaluating machine learning models using the KICK dataset.
+KICK: Korean Football In-game Conversation State Tracking Dataset for Dialogue and Turn Level Evaluation
 
 ## 1. Data Construction
 The data construction part is omitted from this document.
