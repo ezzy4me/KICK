@@ -1,7 +1,11 @@
 # KICK
 KICK: Korean Football In-game Conversation State Tracking Dataset for Dialogue and Turn Level Evaluation
 
+<img width="1210" alt="Screen Shot 2024-10-01 at 2 03 15 PM" src="https://github.com/user-attachments/assets/b368139a-7574-4a44-af6a-a021f9a8bfe1">
+Recent research in dialogue state tracking has made significant progress in tracking user goals through dialogue-level and turn-level approaches, but existing research primarily focused on predicting dialogue-level belief states. In this study, we present the KICK: Korean football In-game Conversation state tracKing dataset, which introduces a conversation-based approach. This approach leverages the roles of casters and commentators within the self-contained context of sports broadcasting to examine how utterances impact the belief state at both the dialogue-level and turn-level. Toward this end, we propose a task that aims to track the states of a specific time turn and understand conversations during the entire game. The proposed dataset comprises 228 games and 2463 events over one season, with a larger number of tokens per dialogue and turn, making it more challenging than existing datasets. Experiments revealed that the roles and interactions of casters and commentators are important for improving the zero-shot state tracking performance. By better understanding role-based utterances, we identify distinct approaches to the overall game process and events at specific turns.
+
 ## 1. Data Construction
+<img width="883" alt="Screen Shot 2024-10-01 at 2 04 11 PM" src="https://github.com/user-attachments/assets/2186b30e-3922-4bfa-8d82-9e64a674951b">
 The data construction part is omitted from this document.
 
 ## 2. LLM-based Inference
