@@ -4,7 +4,7 @@ import argparse
 import json
 from openai import OpenAI 
 from tqdm import tqdm
-GPT_API_KEY = "sk-proj-4FBAcEwobtx42YHqBbqjT3BlbkFJ3VmxufhD9Ehm2wSCk6jO"
+GPT_API_KEY = "PUT_YOUR_API_KEY"
 
 
 def inference(data, args, model_name="gemma-9b-it"):
