@@ -7,7 +7,7 @@ Recent research in dialogue state tracking has made significant progress in trac
 
 ## Dataset Usage
 ```
-inference/data
+Data
     ├── KICK_dataset.json
 ```
 ### Dataset Usage Guidelines
@@ -26,7 +26,7 @@ By using this dataset, you agree to comply with these terms. Failure to adhere t
 
 ### States
 ``` bash
-Kleague_crawling.py
+DataConstruct/Kleague_crawling.py
 ```
 
 The crawled data forms the states of the dataset. After each match is crawled and the relevant data is extracted, the dataset gets updated. This dataset includes the following states:
@@ -40,7 +40,7 @@ This script uses Selenium to crawl match data from web pages. The data includes 
 
 ### Dialogues
 ``` bash
-clova_script.py
+DataConstruct/clova_script.py
 ```
 The ASR data forms the dialogues of the dataset. This script utilizes Naver Clova Speech API to perform speech-to-text processing. It takes an audio file (such as an .mp3 file) as input, processes it through the Clova Speech API, and outputs speaker-separated transcriptions in a CSV format. 
 
