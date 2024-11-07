@@ -8,7 +8,7 @@ Recent research in dialogue state tracking has made significant progress in trac
 ## Dataset Usage
 ```
 Data
-    ├── KICK_dataset.json
+  ├── KICK_dataset.json
 ```
 ### Dataset Usage Guidelines
 This dataset is made available for academic purposes and is intended for research and educational applications only. The following terms and conditions must be strictly adhered to:
@@ -40,7 +40,7 @@ This script uses Selenium to crawl match data from web pages. The data includes 
 
 ### Dialogues
 ``` bash
-DataConstruct/clova_script.py
+DataConstruction/clova_script.py
 ```
 The ASR data forms the dialogues of the dataset. This script utilizes Naver Clova Speech API to perform speech-to-text processing. It takes an audio file (such as an .mp3 file) as input, processes it through the Clova Speech API, and outputs speaker-separated transcriptions in a CSV format. 
 
